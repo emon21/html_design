@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+background-color: var(--primary-color);
+}
+
+:root{
+
+    --primary-color:white;
+
+}
+
+h2{
+    color: rgb(248, 245, 244);
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.btn-area {
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+    
+}
+
+/* btn */
+
+.click-btn{
+    display: inline-block;
+    color: aliceblue;
+    padding: 10px 40px;
+    font-size: 50px;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #3498db;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.click-btn::before{
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: #f52004;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    transition: .7s;
+    z-index: -1;
+    /* opacity: 0; */
+  
+}
+
+
+.click-btn:hover::before{
+    width: 100%;  
+    /* opacity: 1; */
+}
+
+/* btn */
+
+
+
+.click-btn1{
+    display: inline-block;
+    color: red;
+    padding: 10px 40px;
+    font-size: 50px;
+    text-decoration: none;
+    border-radius: 10px;
+    /* background-color: #3498db; */
+    border: 2px solid blue;
+    /* border: 2px solid black; */
+    outline: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition:all .5s;
+}
+
+.click-btn1::after{
+    content: '';
+    width: 100%;
+    height: 0;
+    background-color: #f52004;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    transition: .7s;
+    z-index: -1;
+    /* opacity: 0; */
+   
+  
+}
+
+/* ul{
+    margin-left: 50px;
+    list-style: none;
+
+}
+li{
+    font-size: 20px;
+   transition: all .5s;
+}
+
+li::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    padding-right: 5px;
+    color: rgb(230, 78, 8);
+    transition: all .5s;
+    width: 20px;
+    height: auto;
+    display: inline-block;
+}
+li:hover::before{
+    content: '\f772';
+    font-family:'Font Awesome 5 Free';
+    font-weight: 600;
+    color: blue;
+  
+   width: 20px;
+   height: auto;
+   
+
+} */
+
+.menu{
+    margin-left: 50px;
+    padding-bottom: 20px;
+   
+}
+.menu ul{list-style: none;}
+.menu ul li{ text-decoration: none;}
+.menu ul li a{
+    font-size: 20px;
+    color: blue;
+    display: inline-block;
+    text-decoration: none;
+    height: 10px;
+    width: 50px;
+    display: inline-block;
+    transition: all .5s;
+}
+.menu ul li a:hover{}
+
+.menu ul li a:hover::before{
+    content: '';
+    /* width: 20px;
+    height: auto;
+    display: inline-block; */
+    border-left:10px solid blue ;
+    height: 10px;
+    width: 50px;
+    display: inline-block;
+}
+
+
+.click-btn1:hover{
+     
+    color: #fff;
+    border: 2px solid black;
+    outline: none;
+}
+
+.click-btn1:hover::after{
+    height: 100%;  
+   
+   
+    border-radius: 10px;
+    /* opacity: 1; */
+}
+
+
+
+
+/* btn */
+
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    border-radius: 12px;
+    border: 2px solid #1c05e9;
+    padding: 14px 48px 13px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn.btn-primary span{
+    color: white;
+    position: relative;
+    z-index: 9;
+    font-weight: 500;
+}
+.btn.btn-outline span{
+    color: #F75023;
+    position: relative;
+    z-index: 9;
+    font-weight: 500;
+}
+.btn.btn-primary::before{
+    position: absolute;
+    content: "";
+    z-index: 0;
+    background-color: #F75023;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+   
+
+}
+
+.btn.btn-primary:hover{
+    border: 2px solid tomato;
+    overflow: hidden;
+}
+
+
+
+.btn.btn-outline::before{
+    position: absolute;
+    content: "";
+    z-index: 0;
+    background-color: #F75023;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 0px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.btn.btn-primary:hover::before{
+    height: 0px;
+}
+.btn.btn-outline:hover::before{
+    height: 100%;
+}
+.btn.btn-primary:hover span{
+    color: #491304;
+}
+.btn.btn-outline:hover span {
+  color: white;
+}
