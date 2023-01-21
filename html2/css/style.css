@@ -274,7 +274,7 @@ header {
     margin-top: 50px;
 }
 .service-box {
-    width: 31.3%;
+    width: 32%;
     box-shadow: rgba(0, 0, 0, 0.1) 4px 4px 20px 0px;
     margin-right: 2%;
     margin-bottom: 30px;
@@ -282,6 +282,10 @@ header {
     box-sizing: border-box;
     transition: all 0.5s ease 0s;
     cursor: pointer;
+}
+
+.service-box:nth-child(3n+3){
+    margin-right: 0;
 }
 .service-icon {
     width: 60px;
@@ -317,3 +321,187 @@ header {
     transform: scale(1.1);
     letter-spacing: 5px;
 }
+
+
+.demo{
+
+    text-decoration: none;
+    color: rgb(252, 248, 248);
+    text-align: center;
+    background-color: blue;
+    display: block;
+    position: relative;
+    width: 220px;
+    height: auto;
+    margin: 0 auto;
+    /* padding: 0 25px; */
+
+    font-size: 30px;
+}
+
+.demo::before{
+    position: absolute;
+    content: "";
+    left: 35px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 0;
+    height: 2px;
+    background: tomato;
+    transition: all .5s;
+    padding-left: 0;
+/* display: block; */
+
+}
+
+.demo:hover::before{
+    width: 30px;
+    padding-left: 10px;
+    /* padding-left: 10px; */
+  
+}
+
+
+/* 
+.main-menu ul li .submenu li a {
+    position: relative;
+    z-index: 11;
+    color: #70e717;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0 25px;
+    padding-bottom: 1px;
+    width: 100%;
+}
+
+
+.main-menu ul li .submenu li a::before {
+    position: absolute;
+    content: "";
+    left: 25px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 0;
+    height: 1px;
+    background-color: var(--tp-theme-1);
+}
+
+
+.main-menu ul li .submenu li:hover > a::before {
+    width: 12px;
+} */
+
+
+/* price plan */
+
+
+.price-plan{
+    padding: 50px;
+    background-color:  #eaecf7;
+    overflow: hidden;
+}
+.priceing-box{
+    margin-top:50px;
+    
+}
+.priceing-item{
+    width: 32%;
+    margin-right: 2%;
+    background-color: #fff;
+    box-shadow: 3px 4px 40px 0 rgba(98, 120, 223, .1) ;
+    border-radius: 10px;
+
+
+}
+.priceing-item:nth-child(3){
+    margin-right: 0;
+  
+}
+.priceing-title{
+    
+}
+.priceing-title h2{
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.priceing-title p{
+    font-size: 20px;
+}
+.priceing-top{
+    padding: 30px;
+    border-bottom: 1px solid #ddd;
+    transition: all .3s;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+  
+}
+.priceing-top h4{
+    font-size: 25px;
+    font-weight: 400;
+}
+.priceing-top h1{
+    margin: 32px 0;
+    font-size: 50px;
+}
+.priceing-top h1 span{
+   
+    font-size: 18px;
+}
+.priceing-top h5{
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.priceing-top p{
+font-size: 20px;
+line-height: 1.5
+em;
+
+}
+.priceing-content{
+    padding: 30px;
+   
+
+}
+.priceing-content ul{
+    list-style: none;
+}
+.priceing-content ul li{
+    margin: 20px 0;
+    font-size: 20px;
+    color: #767676;
+    text-transform: capitalize;
+}
+.priceing-content ul li span {
+    margin-right: 5px;
+    color: #6278df;
+    font-size: 25px;
+    width: 30px;
+    display: inline-block;
+}
+.priceing-btn{}
+.priceing-btn .default-btn{
+    box-shadow: 3px 4px 30px 0 rgba(98, 120, 223, .2) ;
+
+}
+.priceing-item:hover .priceing-top {
+    background-color: #6278df;
+    color: #fff;
+   
+}
+.priceing-item:hover  .priceing-btn .default-btn{
+    background-color: #6278df;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* price plan */
